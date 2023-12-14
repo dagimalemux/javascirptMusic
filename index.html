@@ -8,12 +8,24 @@
     <body>
         <div class="music">
             <img src="./head.svg" alt="">
-            <audio id="player" controls>
-                <source id="source" src="songs/kanye.mp3"/> 
+            <audio id="player" >
+                <source id="source"/> 
             </audio>
+            <div class="controls">
+                <p class="currentSong"></p>
+                <div class="controls-wrapper">
+                    <span>&#9658;</span>
+                    <span>&#10074;&#10074;</span>
+                </div>
+                <p> Volume: </p>
+                <div class="volume">
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+                    <span>+</span>
+                </div>
+            </div>
        <h2> The mentor: </h2>
        <ol>
-        <li>By Ye </li>
+        <li>By Ye</li>
        </ol>
         </div>
     </body>
